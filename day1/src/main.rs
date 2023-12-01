@@ -56,9 +56,7 @@ fn part2() {
                 String::from(line.chars().nth(l).unwrap())
             };
 
-            let mut calibration_value = one;
-            calibration_value.push_str(&two);
-            sum += calibration_value.parse::<i32>().unwrap();
+            sum += one.parse::<i32>().unwrap() * 10 + two.parse::<i32>().unwrap();
         }
     }
 
